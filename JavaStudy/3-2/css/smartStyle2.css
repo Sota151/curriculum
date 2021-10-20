@@ -1,6 +1,62 @@
 @media screen and (max-width: 767px) {
 
-    body{
+    .clearfix::after { 
+        content: ''; 
+        display: block; 
+        clear: both;
+    }
+    
+    .header{
+        background-color: #141f40;
+        height: 100px;
+        width: 300px;
+    }
+    
+    .main{
+        height: 250px;
+        width: 300px;
+    }
+    
+    .left{
+        background-color: #80bfa8;
+        height: 250px;
+        width: 100px;
+        float: left;
+    }
+    
+    .right{
+        background-color: #ff9e6b;
+        width: 200px;
+        height: 250px;
+        float: right;
+    }
+    
+    .center{
+        float: left;
+    }
+    
+    .center_up{
+        background-color: #dbd400;
+        height: 50px;
+        width: 125px;
+    }
+    
+    .center_down{
+        background-color: #0093b7;
+        height: 100px;
+        width: 125px;
+    }
+    
+    .rightmost{
+        background-color: #8c2727;
+        height: 100px;
+        width: 200px;
+        float: right;
+    }
+    
+    .footer{
+        background-color: #d98d30;
+        height: 100px;
         width: 300px;
     }
 
@@ -8,8 +64,57 @@
 
 @media screen and (max-width: 479px) {
 
-    body{
-        float: none;
+    
+    .header{
+        background-color: #141f40;
+        height: 100px;
+        width: 150px;
+    }
+    
+    .main{
+        height: 325px;
+        width: 150px;
+    }
+    
+    .left{
+        background-color: #80bfa8;
+        height: 75px;
+        width: 150px;
+    }
+    
+    .right{
+        background-color: #ff9e6b;
+        width: 150px;
+        height: 250px;
+    
+    }
+
+    
+    .center_up{
+        background-color: #dbd400;
+        height: 25px;
+        width: 150px;
+        margin-top: 75px;
+    }
+    
+    .center_down{
+        background-color: #0093b7;
+        height: 75px;
+        width: 150px;
+       
+    }
+    
+    .rightmost{
+        background-color: #8c2727;
+        height: 75px;
+        width: 150px;
+     
+
+    }
+    
+    .footer{
+        background-color: #d98d30;
+        height: 100px;
         width: 150px;
     }
 
