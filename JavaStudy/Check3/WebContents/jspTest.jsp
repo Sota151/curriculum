@@ -10,10 +10,10 @@
 <body>
 <%@ include file="header.jsp" %>
 <form>
-<div><label for="name">ID: </label>
+<div><label for="name">name: </label>
     <input type="text" name="name" id="name" required>
 </div>
-<div><label for="name">PASS: </label>
+<div><label for="name">id: </label>
     <input type="text" name="name" id="name" required>
 </div>
 </form>
