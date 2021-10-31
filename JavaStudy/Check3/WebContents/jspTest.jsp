@@ -9,14 +9,14 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
-<form>
-<div><label for="name">name: </label>
-    <input type="text" name="name" id="name" required>
-</div>
-<div><label for="name">id: </label>
-    <input type="text" name="name" id="name" required>
-</div>
-</form>
+<table>
+<tr><th for="name">name</th>
+  <th> <input type="text" name="name" id="name" required></th>
+</tr>
+<tr><th for="name">id</th>
+   <th> <input type="text" name="name" id="name" required></th>
+</tr>
+</table>
 <%@ include file="footer.jsp" %>
 </body>
 </html>

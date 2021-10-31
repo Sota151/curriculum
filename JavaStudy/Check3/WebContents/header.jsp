@@ -9,9 +9,8 @@
 <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
-
 <header>
-	<div class="header">
+	<span class="header">
 		<div class="title">login</div>
 		<div class="java">
     <% Date date = new Date();
@@ -19,7 +18,8 @@
       String formatDate = sdf.format(date);
       out.print(formatDate); %>
 		</div>
-	</div>
+	</span>
 </header>
+
 
 

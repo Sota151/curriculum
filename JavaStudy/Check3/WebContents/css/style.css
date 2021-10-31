@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
-div{
+.header{
 display: flex;
+background-color: gray;
+
 }
 .title{
 display: inline-block;
@@ -9,13 +11,12 @@ padding: 10px;
 color: white;
  }
 .java{
+display: inline-block;
 padding: 10px;
+margin-top: 5px;
 font-size: 10px;
 }
 
-header{
-	background-color: gray;
-}
 
 a{
 display: inline-block;
