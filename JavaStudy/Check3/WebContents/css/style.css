@@ -26,7 +26,8 @@ color: white;
 footer{
 	background-color: gray;
 }
-form{
+
+.form{
 	padding-top: 50px;
 	padding-bottom: 50px;
 }

@@ -9,6 +9,7 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
+<div class="form">
 <table>
 <tr><th for="name">name</th>
   <th> <input type="text" name="name" id="name" required></th>
@@ -17,6 +18,7 @@
    <th> <input type="text" name="name" id="name" required></th>
 </tr>
 </table>
+</div>
 <%@ include file="footer.jsp" %>
 </body>
 </html>
