@@ -64,13 +64,11 @@ public class ExException<sample> {
                     // 問①は最下部にもあります。
                     // ルール: ここへ作成したメソッドを呼び出す
 						
-                    	try {
-          
-						    String str = null ;
-						    System.out.println(str.length());
-                    		
-                  		}
-					finally{}
+                    	
+                    
+						    nullptint();
+                   
+                  		
 						
                     	
                     break;
@@ -80,12 +78,10 @@ public class ExException<sample> {
         			// 問②: 「throw」を使用せずに「ArrayIndexOutOfBoundsException」を発生させる処理を記述しなさい。
         			// Tips: ご自身で配列を準備してください（使用する配列の型、要素数は自由）
         			// ここへ記述
-        				try {
+        				
         				int[] Tips= {1,2,3,4,5};
         				int num = Tips[5];
         				System.out.println(num);
-        				}
-        				finally {}
         				
         			break;
         			case CONST_EXCEPTION_TRIGER_CAST:
@@ -130,7 +126,10 @@ public class ExException<sample> {
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
     // ここへ記述
-	
+	 static void nullptint() {
+		 String str = null ;
+		 System.out.println(str.length());
+	 }
 	
     
     /**
