@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @param <sample>
  *
  */
-public class ExException<sample> {
+public class ExException {
 
     // 定数（条件）
     private static final int CONST_EXCEPTION_TRIGER_NULL = 1;
@@ -31,7 +31,7 @@ public class ExException<sample> {
     private static final String CONST_MSG_NULLPO = "ヌルポです。";
 
     
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
         // 変数定義
         int parameter;
@@ -64,10 +64,9 @@ public class ExException<sample> {
                     // 問①は最下部にもあります。
                     // ルール: ここへ作成したメソッドを呼び出す
 						
-                    	
                     
-						    nullptint();
-                   
+					nullprint();
+                
                   		
 						
                     	
@@ -95,15 +94,18 @@ public class ExException<sample> {
                 
            }
             
+           
             
             
-            
-            
-            
-            
-            
-             catch (NullPointerException e) {
-                printException(e);
+         catch (NullPointerException e) {
+            	 		
+            	 		
+            	 		System.out.println(e);
+            	 		System.out.println(CONST_MSG_NULLPO);
+            	 		
+//          	            System.out.println(e.getMessage());
+            	
+            	 
             } catch (ArrayIndexOutOfBoundsException e) {
             	 printException(e);
                  // 問③: クラスキャストの例外をキャッチしなさい。
@@ -126,18 +128,22 @@ public class ExException<sample> {
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
     // ここへ記述
-	 static void nullptint() {
-		 String str = null ;
-		 System.out.println(str.length());
-	 }
 	
-    
+	 
+	private static void nullprint() throws  NullPointerException{
+		        
+		    String[] str = null;
+		    System.out.println(str.length);
+			throw new NullPointerException(CONST_MSG_NULLPO);   
+			     	    
+	}
+	   
     /**
      * 例外処理のメッセージを出力
      *
      * @param e 発生した例外
      */
     private static void printException(final Exception e) {
-        System.out.println(e);
-    }
+        System.out.println(e);}
+    
 }
