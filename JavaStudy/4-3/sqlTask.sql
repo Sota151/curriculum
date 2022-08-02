@@ -2,7 +2,6 @@
  
 -- 1. 店舗テーブルから店舗名を抽出しなさい。また、列名の表示は別名で'店舗名'とすること。
 -- [回答]
-select store_name from store_table  order by store_code;
 select store_name 店舗名 from  store_table ;
 
  
@@ -29,7 +28,7 @@ HAVING avg(quantity) > (SELECT avg(quantity) FROM stock_table WHERE store_code =
 -- 6. 商品テーブルに「商品コード='M001'、商品名='マフラー'、単価=4500円、更新日付=本日日付」のデータを追加しなさい。※実行後のSELECT結果も貼付すること。
 -- [回答]
 insert into goods_table
-(goods_code,goods_name_price,update_day)
+(goods_code,goods_name,goods_price,update_day)
 values
 ('M001','マフラー',4500,'2021-12-02') 
  
